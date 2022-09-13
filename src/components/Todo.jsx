@@ -12,7 +12,7 @@ const Todo = ({ todo }) => {
   };
 
   const handleColorChange = (todoId, color) => {
-    dispatch(colorSelected(color, todoId));
+    dispatch(colorSelected(todoId, color));
   };
 
   const handleDeleteTodo = (todoId) => {

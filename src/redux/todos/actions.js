@@ -1,10 +1,10 @@
 import {
-    ADDED,
-    ALLCOMPLETED,
-    CLEARCOMPLETED,
-    COLORSELECTED,
-    DELETED,
-    TOGGLED
+  ADDED,
+  ALLCOMPLETED,
+  CLEARCOMPLETED,
+  COLORSELECTED,
+  DELETED,
+  TOGGLED
 } from "./actionTypes";
 
 export const added = (todoText) => {
@@ -21,12 +21,12 @@ export const toggled = (todoId) => {
   };
 };
 
-export const colorSelected = (color, todoId) => {
+export const colorSelected = (todoId, color) => {
   return {
     type: COLORSELECTED,
     payload: {
-      color,
       todoId,
+      color,
     },
   };
 };
